@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  lib_backend:
+    image: ${DOCKER_REGISTRY-}libbackend
+    build:
+      context: .
+      dockerfile: lib_backend/Dockerfile
